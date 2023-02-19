@@ -14,7 +14,7 @@ find_package(Qt5 COMPONENTS
         REQUIRED)
 #
 #set(UI
-#        c3dnamingdialog.ui
+#        CCdwkFileNamingDialog.ui
 #        )
 #
 #qt5_wrap_ui(UI_HEADERS ${UI_FILE})
@@ -36,7 +36,7 @@ find_package(Qt5 COMPONENTS
 
 # add_executable(3dNaming main.cpp ${SOURCE_FILES} ${HEADER_FILES} ${UI_FILES} ${RESOURCES})
 
-add_executable(3dNaming main.cpp c3dnamingdialog.cpp c3dnamingdialog.h c3dnamingdialog.ui)
+add_executable(3dNaming main.cpp CCdwkFileNamingDialog.cpp CCdwkFileNamingDialog.h CCdwkFileNamingDialog.ui)
 target_include_directories(3dNaming PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(3dNaming
         Qt5::Core
